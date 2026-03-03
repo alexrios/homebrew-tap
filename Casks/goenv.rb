@@ -14,22 +14,22 @@ cask "goenv" do
   on_macos do
     on_intel do
       url "https://github.com/alexrios/goenv/releases/download/v#{version}/goenv_#{version}_darwin_amd64.tar.gz"
-      sha256 "294203e441f7190907bf3d51328874997bd389e59a1fbf3a4e85bda0b510e825"
+      sha256 "8e23470d8862602839c8b93859325212ec06c7ec4d555036c0f13be91c6f10c5"
     end
     on_arm do
       url "https://github.com/alexrios/goenv/releases/download/v#{version}/goenv_#{version}_darwin_arm64.tar.gz"
-      sha256 "7b1cedb91994b4d7b67d40a89a1ca189551a0bac24cdf66dc31cc390d6e796ec"
+      sha256 "406b54d59f7752b3ab769461ab7eff6b572ddea26650e1e4684a2da08506c092"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/alexrios/goenv/releases/download/v#{version}/goenv_#{version}_linux_amd64.tar.gz"
-      sha256 "c8b077eca67ba7bc65848b4651a8031bc8928dd23b8cea080c1fa61c6a4932ee"
+      sha256 "42879f9b839a0a047efa9acf60ddbe6e9c1b6820db196e1fa5c225387ecffbe0"
     end
     on_arm do
       url "https://github.com/alexrios/goenv/releases/download/v#{version}/goenv_#{version}_linux_arm64.tar.gz"
-      sha256 "2736ed76d0339e88641602d164cfdb5bac13bc975039a4211c00a322236790f5"
+      sha256 "de008e1ff7fadb18f0a4e5f139050ccbba7c1f44c7b424fd41f455d97eea230c"
     end
   end
 
