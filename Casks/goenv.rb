@@ -14,22 +14,28 @@ cask "goenv" do
   on_macos do
     on_intel do
       url "https://github.com/alexrios/goenv/releases/download/v#{version}/goenv_#{version}_darwin_amd64.tar.gz"
-      sha256 "24c2a8ab35a5785687da35784d84a21b5e772468a6243c33edf3cbc98929537d"
+      sha256 "294203e441f7190907bf3d51328874997bd389e59a1fbf3a4e85bda0b510e825"
     end
     on_arm do
       url "https://github.com/alexrios/goenv/releases/download/v#{version}/goenv_#{version}_darwin_arm64.tar.gz"
-      sha256 "abd82c853f6f7908607fac23e04076190c2183d8108d6d10f5531bed309f97b9"
+      sha256 "7b1cedb91994b4d7b67d40a89a1ca189551a0bac24cdf66dc31cc390d6e796ec"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/alexrios/goenv/releases/download/v#{version}/goenv_#{version}_linux_amd64.tar.gz"
-      sha256 "1ecab6b865bce98acb5d4c59d59209a45bcae4b42caa70f15f0ee8987a5bf21e"
+      sha256 "c8b077eca67ba7bc65848b4651a8031bc8928dd23b8cea080c1fa61c6a4932ee"
     end
     on_arm do
       url "https://github.com/alexrios/goenv/releases/download/v#{version}/goenv_#{version}_linux_arm64.tar.gz"
-      sha256 "82dea02fdb2e0eddebaea8a55f9a2e9d260da8977bbd6d3b0cf007e01e9a16ae"
+      sha256 "2736ed76d0339e88641602d164cfdb5bac13bc975039a4211c00a322236790f5"
+    end
+  end
+
+  postflight do
+    if OS.mac?
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/goenv"]
     end
   end
 
