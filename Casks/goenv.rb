@@ -3,7 +3,7 @@ cask "goenv" do
   name "goenv"
   desc "TUI for viewing and editing Go environment variables"
   homepage "https://github.com/alexrios/goenv"
-  version "0.3.0"
+  version "0.4.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "goenv" do
   on_macos do
     on_intel do
       url "https://github.com/alexrios/goenv/releases/download/v#{version}/goenv_#{version}_darwin_amd64.tar.gz"
-      sha256 "e2a141312339e7734927c2ac2b2bbfa710ea33ecceb388128eaa97e252c0ea7d"
+      sha256 "038a0c736dc2fe141c0ac89749ace024a5d2dbc5bf111e926c683d055417d5e4"
     end
     on_arm do
       url "https://github.com/alexrios/goenv/releases/download/v#{version}/goenv_#{version}_darwin_arm64.tar.gz"
-      sha256 "a514be3de69895d8c3e922b39a81f0f8e2fc0c1abb5a0022b8ef6c59b2572a85"
+      sha256 "a4341d54cd968bb713ee81bbc4e707e6579c8908bccac1d45a4542673be44f56"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/alexrios/goenv/releases/download/v#{version}/goenv_#{version}_linux_amd64.tar.gz"
-      sha256 "c5568cd3197e01f1f95c45a8980fabf7df9e75d6b09e65f4952553e97b5756a2"
+      sha256 "bbf4284453b2a8717638c7a589e5b846a520ca3bbd257d36f16490abff4e9511"
     end
     on_arm do
       url "https://github.com/alexrios/goenv/releases/download/v#{version}/goenv_#{version}_linux_arm64.tar.gz"
-      sha256 "3d3e2d8c0dcc4fdd3e8991635faecd23aecbf16ceb116d98a1b6b7114fe6ff83"
+      sha256 "836fc3a634c948a8fe1ce5d5e329c49152ff725d6452a9c9c2e602b8734dedbd"
     end
   end
 
