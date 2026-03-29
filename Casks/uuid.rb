@@ -13,17 +13,17 @@ cask "uuid" do
 
   on_macos do
     url "https://github.com/alexrios/uuid/releases/download/v#{version}/uuid_Darwin_all.tar.gz"
-    sha256 "6fdaffb464f88abf540e5e1b0b2681edf93174f17960bcb008b792836867be7c"
+    sha256 "589684f443ca17ace9a0921726729e68fb5d66d46145baf0d25506acd4dc8a2e"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/alexrios/uuid/releases/download/v#{version}/uuid_Linux_x86_64.tar.gz"
-      sha256 "65797b8efc3efaa1c3ed51666bd2d2f13772d7cfac7a54ca973c442f26c020ce"
+      sha256 "b5ea268565f8da64478714738dc074650d6d4b2cc6b9c35e2803921967082640"
     end
     on_arm do
       url "https://github.com/alexrios/uuid/releases/download/v#{version}/uuid_Linux_arm64.tar.gz"
-      sha256 "108a00128c9044b639b717e6c7257d5ad6f866b19b8eed929ac46c5c0680681e"
+      sha256 "368303e8e7de39dd94d22d12c381280a5ed36f1b0059ef02296d1ae62fbbc171"
     end
   end
 
