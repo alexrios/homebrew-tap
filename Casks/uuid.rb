@@ -3,7 +3,7 @@ cask "uuid" do
   name "uuid"
   desc "RFC 9562 UUID generator and parser written in Zig"
   homepage "https://github.com/alexrios/uuid"
-  version "0.2.0"
+  version "1.0.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,17 +13,17 @@ cask "uuid" do
 
   on_macos do
     url "https://github.com/alexrios/uuid/releases/download/v#{version}/uuid_Darwin_all.tar.gz"
-    sha256 "6a97f5eaace3c73972394714f2b693616964ded4729f355d57c9f3b597bd53f5"
+    sha256 "6fdaffb464f88abf540e5e1b0b2681edf93174f17960bcb008b792836867be7c"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/alexrios/uuid/releases/download/v#{version}/uuid_Linux_x86_64.tar.gz"
-      sha256 "3b497489978ae01b355f0474c58f6a1931366929087ab26cbbeecfcfccca26a7"
+      sha256 "65797b8efc3efaa1c3ed51666bd2d2f13772d7cfac7a54ca973c442f26c020ce"
     end
     on_arm do
       url "https://github.com/alexrios/uuid/releases/download/v#{version}/uuid_Linux_arm64.tar.gz"
-      sha256 "8a4e74e96c57da36e1c00c97be5c9fd826aec3072e8ebe358b6f7a00006242a7"
+      sha256 "108a00128c9044b639b717e6c7257d5ad6f866b19b8eed929ac46c5c0680681e"
     end
   end
 
